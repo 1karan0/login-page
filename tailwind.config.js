@@ -16,5 +16,7 @@ module.exports = {
       },//Breakpoints for screens
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 }
