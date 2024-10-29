@@ -75,7 +75,7 @@ const Addquestions = () => {
             className="border-2 border-gray-400 p-1 rounded-md placeholder-gray-400"
           />
           <div className="flex flex-col items-center">
-            <p className="text-white">----</p>
+            <p className="text-white">.</p>
             <button className="p-4 bg-[#1fc074] rounded text-white w-1/2 ">
               Add Questions
             </button>
