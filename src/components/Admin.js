@@ -1,6 +1,13 @@
 import React from 'react'
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
-
+import { MdDashboard  } from "react-icons/md";
+import { RiStickyNoteAddFill } from "react-icons/ri";
+import { MdAddBox } from "react-icons/md";
+import { BsPersonFillAdd } from "react-icons/bs";
+import { FaRegPenToSquare } from "react-icons/fa6";
+import { PiUserListFill } from "react-icons/pi";
+import { TbReportSearch } from "react-icons/tb";
+import { MdOutlineLogout } from "react-icons/md";
 import Login from './Login';
 import AddAssesment from './AddAssesment';
 import Dashboard from './Dashboard';
@@ -24,35 +31,35 @@ const Admin = () => {
           
           <NavLink to="/" className={({ isActive }) => 
               `flex items-center  gap-2 px-4 py-2 rounded hover:bg-[#4f4f52] hover:text-white transition-all duration-300 ${isActive ? 'bg-[#1fc074] text-white' : ''}`
-            }> <img src="dashboard.png" alt="" />Dashboard</NavLink>
+            }> <MdDashboard />Dashboard</NavLink>
             <NavLink to="/AddAssesment" className={({ isActive }) => 
               `flex items-center  gap-2 px-4 py-2 rounded hover:bg-[#4f4f52] hover:text-white transition-all duration-300 ${isActive ? 'bg-[#1fc074] text-white' : ''}`
-            }> <img src="addasses.png" alt="" />
+            }> <RiStickyNoteAddFill />
                 Add Assesment</NavLink>
             <NavLink to="/Candidate" className={({ isActive }) => 
               `flex items-center  gap-2 px-4 py-2 rounded hover:bg-[#4f4f52] hover:text-white transition-all duration-300 ${isActive ? 'bg-[#1fc074] text-white' : ''}`
-            }> <img src="addcandi.png" alt="" />
+            }> <BsPersonFillAdd />
                 Add Candidate</NavLink>
             <NavLink to="/Assesment" className={({ isActive }) => 
-              `flex items-center  gap-1 px-4 py-2 rounded hover:bg-[#4f4f52] hover:text-white transition-all duration-300 ${isActive ? 'bg-[#1fc074] text-white' : ''}`
-            }> <img src="updateass.png" alt="" />
+              `flex items-center  gap-2 px-4 py-2 rounded hover:bg-[#4f4f52] hover:text-white transition-all duration-300 ${isActive ? 'bg-[#1fc074] text-white' : ''}`
+            }><FaRegPenToSquare />
                 Update Assesment</NavLink>
                 <NavLink to="/Question" className={({ isActive }) => 
               `flex items-center  gap-2 px-4 py-2 rounded hover:bg-[#4f4f52] hover:text-white transition-all duration-300 ${isActive ? 'bg-[#1fc074] text-white' : ''}`
-            }> <img src="addquestion.png" alt="" />
+            }> <MdAddBox />
                 Add Questions</NavLink>
                 <NavLink to="/assesmentresult" className={({ isActive }) => 
               `flex items-center  gap-2 px-4 py-2 rounded hover:bg-[#4f4f52] hover:text-white transition-all duration-300 ${isActive ? 'bg-[#1fc074] text-white' : ''}`
-            }> <img src="result.png" alt="" />
+            }> <TbReportSearch />
                 Assesment Result</NavLink>
                 <NavLink to="/studentfeedback" className={({ isActive }) => 
               `flex items-center  gap-2 px-4 py-2 rounded hover:bg-[#4f4f52] hover:text-white transition-all duration-300 ${isActive ? 'bg-[#1fc074] text-white' : ''}`
-            }> <img src="feedback.png" alt="" />
+            }> <PiUserListFill />
                 Student Feedback</NavLink>
             
             
           </nav>
-          <button className='flex items-center justify-center relative  hover:bg-[#1fc074] focus:bg-[#1fc074] p-3 transition-all duration-300 rounded'><img src="logout.png" alt="" />Log Out</button>
+          <button className='flex items-center justify-center relative  hover:bg-[#1fc074] focus:bg-[#1fc074] p-3 transition-all duration-300 rounded'><MdOutlineLogout />Log Out</button>
         </aside>
         
         {/* Main Content */}
